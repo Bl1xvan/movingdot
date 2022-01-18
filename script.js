@@ -28,5 +28,4 @@ document.addEventListener("keydown", function(event){
         dot.style.left = `${fieldrect.x + 20}px`;
     }
 })
-
-//left, top right etc, need to start with their default values.
+//This is the new branch!
