@@ -6,6 +6,19 @@ body{
     width: 100%;
 }
 
+#container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#buttonfield{
+    border: 2px green solid;
+    height: 50vh;
+    width: 80vw;
+    margin-top: 20vh;
+}
+
 #dot{
     display: block;
     height: 20px;

@@ -1,4 +1,6 @@
 const dot = document.getElementById("dot");
+const buttonfield = document.getElementById("buttonfield");
+const fieldrect = buttonfield.getBoundingClientRect();
 
 document.addEventListener("keydown", function(event){
     let x = event.key;
@@ -20,6 +22,10 @@ document.addEventListener("keydown", function(event){
     if(x === "ArrowLeft"){
         let moveleft = l - 20;
         dot.style.left = `${moveleft}px` ;  
+    }
+
+    if(spot.x > fieldrect.x + fieldrect.width){
+        dot.style.left = `${fieldrect.x + 20}px`;
     }
 })
 
